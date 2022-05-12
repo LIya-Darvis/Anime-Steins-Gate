@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+header {
+  min-height: 100vh;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 260, 260, 0.80), rgba(255, 260, 260, 0.9), rgba(255, 255, 255, 0.99)), url(./img/Backgrounds/fon_3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 230px;
+}
+
+.nav-links {
+  flex: 1;
+  padding: 0% 6%;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 15px;
+}
+
+.nav-links ul li a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background:  #121212;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+  opacity: 50%;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+
+@media(max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+  .enemy {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .enemy-col {
+    flex-basis: 48%;
+    padding: 30px 2%;
+  }
+
+  .enemy-col p {
+    /* padding-bottom: 35px;
+
+    font-size: 16px;
+    font-weight: 400; */
+    line-height: 1.5;
+    padding: 15px 0 25px;
+    font-weight: 500;
+
+    color: rgb(65, 65, 65);
+  }
+
+  .enemy-col h1 {
+    padding-top: 0;
+    color: rgb(26, 26, 26);
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 52px;
+    margin-bottom: 10px;
+  }
+
+  .enemy-col img{
+    width: 100%;
+    border-radius: 15px;
+  }

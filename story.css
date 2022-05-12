@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 260, 260, 0.5), rgba(255, 260, 260, 0.6), rgba(255, 255, 255, 0.99)), url(./img/Backgrounds/fon_4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 230px;
+}
+
+.nav-links {
+  flex: 1;
+  padding: 0% 6%;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 15px;
+}
+
+.nav-links ul li a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background:  #121212;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+  opacity: 50%;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-background .text-box {
+  left: 0;
+  top: 25%;
+  background: #09090d;
+  opacity: 85%;
+}
+
+.text-box {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  text-align: justify;
+}
+
+.text-box p {
+  margin: 45px 72px 65px 72px;
+  font-size: 20px;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+}
